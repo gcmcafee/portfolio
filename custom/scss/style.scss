@@ -716,11 +716,17 @@ main {
     .languages-libraries {
         font-size: 27px;
         margin-bottom: 0.8rem;
-        @media (min-width: 576px) {
-            font-size: 35px;
-        }
         li {
             margin-right: 7px;
+            max-height: 32px;
+            max-width: 29px;
+        }
+        @media (min-width: 576px) {
+            font-size: 35px;
+            li {
+                max-height: 35px;
+                max-width: 40px;
+            }
         }
     }
     .images {
