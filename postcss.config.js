@@ -8,6 +8,7 @@ module.exports = {
                 greedy: [
                     /show/,
                     /collapsing/,
+                    /tooltip/,
                     /navbar-light/,
                     /swiper-slide-active/,
                     /swiper-pagination-clickable/,
