@@ -1,9 +1,6 @@
 import { Tooltip, ScrollSpy, Collapse } from 'bootstrap';
 import Swiper, { Navigation, Pagination } from 'swiper';
 
-// import Swiper and modules styles
-import 'swiper/css';
-
 const scrollSpy = new ScrollSpy(document.body, {
     target: '#nav',
 });
