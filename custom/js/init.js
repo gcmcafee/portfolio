@@ -1,8 +1,15 @@
-const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+import { Tooltip, ScrollSpy, Collapse } from 'bootstrap';
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+// import Swiper and modules styles
+import 'swiper/css';
+
+const scrollSpy = new ScrollSpy(document.body, {
     target: '#nav',
 });
 
 const swiper = new Swiper('.swiper-container', {
+    modules: [Navigation, Pagination],
     spaceBetween: 1,
     slidesPerView: 3,
     centeredSlides: true,
@@ -26,7 +33,7 @@ const tooltipTriggerList = [].slice.call(
 );
 
 const tooltipList = tooltipTriggerList.map(
-    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
 );
 
 function veryTop() {
@@ -45,7 +52,7 @@ window.onload = veryTop;
 function hideNav() {
     const myCollapse = document.querySelector('#navbar .collapse.show');
     if (myCollapse) {
-        new bootstrap.Collapse(myCollapse, {
+        new Collapse(myCollapse, {
             hide: true,
         });
     }
@@ -57,9 +64,11 @@ document.addEventListener('keydown', (e) => {
     }
 });
 // If overlay clicked -> close open full page navigation
-document.querySelector('#navbar .navbar-collapse .overlay').addEventListener('click', () => {
-    hideNav();
-});
+document
+    .querySelector('#navbar .navbar-collapse .overlay')
+    .addEventListener('click', () => {
+        hideNav();
+    });
 
 // If navbar link clicked, wait then -> close open full page navigation
 document.querySelectorAll('#navbar a').forEach((link) => {
@@ -81,7 +90,9 @@ function $activeNav(activeLink) {
     const activeBar = document.getElementById('active-bar');
     const nav = document.getElementById('nav');
 
-    const xMove = activeLink.getBoundingClientRect().left - nav.getBoundingClientRect().left;
+    const xMove =
+        activeLink.getBoundingClientRect().left -
+        nav.getBoundingClientRect().left;
     const barWidth = activeLink.offsetWidth;
 
     // Change light/dark styling for nav
@@ -113,7 +124,9 @@ function $activeNav(activeLink) {
 
 function $spyActiveLink() {
     if (document.getElementById('nav').classList.contains('spy-active')) {
-        const activeLink = document.querySelector('#nav.spy-active .nav-link.active');
+        const activeLink = document.querySelector(
+            '#nav.spy-active .nav-link.active'
+        );
         $activeNav(activeLink);
     }
 }
@@ -126,7 +139,7 @@ window.addEventListener('activate.bs.scrollspy', () => {
 
 document.querySelectorAll('.nav-link').forEach((link) => {
     // eslint-disable-next-line
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function () {
         const nav = document.getElementById('nav');
         nav.classList.remove('spy-active');
         $activeNav(this);

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css');
+@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 
 [style*='--aspect-ratio'] > :first-child {
     width: 100%;
@@ -326,13 +328,7 @@ footer {
     }
     .navbar-text {
         a {
-            &:hover {
-                outline: none;
-                &:after {
-                    opacity: 0.8;
-                    transform: translateX(0);
-                }
-            }
+            &:hover,
             &:focus {
                 outline: none;
                 &:after {
@@ -344,6 +340,7 @@ footer {
         color: rgba(255, 255, 255, 0.9);
     }
 }
+
 .navbar-light {
     .navbar-toggler {
         .navbar-toggler-icon {
@@ -355,26 +352,21 @@ footer {
     }
     .navbar-text {
         a {
-            &:hover {
-                outline: none;
-                &:after {
-                    opacity: 0.8;
-                    transform: translateX(0);
-                }
-            }
+            &:hover,
             &:focus {
                 outline: none;
+                color: rgba(0, 0, 0, 0.9);
                 &:after {
                     opacity: 0.8;
                     transform: translateX(0);
                 }
             }
+            color: rgba(0, 0, 0, 0.9);
         }
-        color: rgba(0, 0, 0, 0.9);
     }
     .navbar-nav {
         .nav-link {
-            &:not(.navbar-btn):not(.active) {
+            &:not(.navbar-btn) {
                 &:hover,
                 &:focus {
                     &:before,
@@ -382,19 +374,14 @@ footer {
                         background-color: rgba(0, 0, 0, 0.65);
                     }
                 }
-                &:not(.active) {
-                    &:hover,
-                    &:focus {
-                        &:before,
-                        &:after {
-                            background-color: rgba(0, 0, 0, 0.65);
-                        }
-                    }
+                &.active {
+                    color: rgba(0, 0, 0, 0.9);
                 }
             }
         }
     }
 }
+
 .top {
     .navbar-brand {
         img {
@@ -408,11 +395,13 @@ footer {
         color: rgba(255, 255, 255, 0.9);
     }
 }
+
 .top.navbar-light {
     .navbar-text {
         color: rgba(0, 0, 0, 0.9);
     }
 }
+
 .navbar.navbar-dark {
     .navbar-nav {
         .nav-link {
@@ -431,6 +420,7 @@ footer {
         }
     }
 }
+
 .navbar.navbar-light {
     .navbar-nav {
         .nav-link {
@@ -449,6 +439,7 @@ footer {
         }
     }
 }
+
 .nav-item {
     display: flex;
     .nav-link {
@@ -717,6 +708,11 @@ main {
         );
     }
 }
+.work .swiper-slide-active:hover .image-set:after {
+    opacity: 1;
+    filter: none;
+}
+
 .work {
     .text {
         max-width: 400px;
@@ -800,10 +796,7 @@ main {
             }
         }
     }
-    .swiper-slide-active:hover .image-set:after {
-        opacity: 1;
-        filter: none;
-    }
+
     .work-body {
         overflow: hidden;
         padding-bottom: 40px;
@@ -886,6 +879,7 @@ main {
 .swiper-slide__content {
     height: 300px;
 }
+
 .swiper-pagination {
     position: absolute;
     text-align: center;
@@ -1162,6 +1156,7 @@ main {
             }
         }
     }
+
     .navbar.navbar-light {
         .navbar-collapse.collapsing {
             .overlay {
