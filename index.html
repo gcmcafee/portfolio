@@ -63,7 +63,7 @@
                 </div>
                 <div class="work-body d-flex justify-content-center">
                     <!-- Slider main container -->
-                    <div class="swiper-container">
+                    <div class="swiper-container swiper-carousel">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -102,8 +102,7 @@
                                                 </ul>
                                             </div>
                                             <div>
-                                                <!-- <button type="button" class="btn btn-outline-secondary link-overlay-after" data-bs-toggle="modal" data-bs-target="#foresightModal">View Details</button> -->
-                                                <a class="btn btn-outline-secondary link-overlay-after" href="https://foresightsports.com" target="blank">View Website</a>
+                                                <button class="btn btn-outline-secondary link-overlay-after" type="button" data-bs-toggle="modal" data-bs-target="#swiperModal">More Details</button>
                                             </div>
                                         </div>
                                     </div>
@@ -136,8 +135,7 @@
                                                 </ul>
                                             </div>
                                             <div>
-                                                <!-- <button type="button" class="btn btn-outline-secondary link-overlay-after" data-bs-toggle="modal" data-bs-target="#flagshipModal">View Details</button> -->
-                                                <a class="btn btn-outline-secondary link-overlay-after" href="https://flagshipsd.com/" target="blank">View Website</a>
+                                                <button class="btn btn-outline-secondary link-overlay-after" type="button" data-bs-toggle="modal" data-bs-target="#swiperModal">More Details</button>
                                             </div>
                                         </div>
                                     </div>
@@ -170,8 +168,7 @@
                                                 </ul>
                                             </div>
                                             <div>
-                                                <!-- <button type="button" class="btn btn-outline-secondary link-overlay-after" data-bs-toggle="modal" data-bs-target="#georgesModal">View Details</button> -->
-                                                <a class="btn btn-outline-secondary link-overlay-after" href="https://georgesatthecove.com/" target="blank">View Website</a>
+                                                <button class="btn btn-outline-secondary link-overlay-after" type="button" data-bs-toggle="modal" data-bs-target="#swiperModal">More Details</button>
                                             </div>
                                         </div>
                                     </div>
@@ -229,6 +226,31 @@
                 <div class="social mt-4"><a target="_blank" href="https://www.linkedin.com/in/codymcafee"><i class="fab fa-linkedin-in"></i></a></div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="swiperModal" tabindex="-1" aria-labelledby="swiperModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header visually-hidden">
+                        <h5 class="modal-title" id="swiperModalLabel">More Info</h5>
+                    </div>
+                    <div class="modal-body p-5">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="swiper swiper-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> Foresight Sports <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                </div>
+                                <div class="swiper-slide"> Flagship <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                </div>
+                                <div class="swiper-slide"> George's <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer id="footer" class="text-center">
         <div class="aside py-1">

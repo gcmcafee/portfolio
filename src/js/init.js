@@ -1,19 +1,18 @@
-import { Tooltip, ScrollSpy, Collapse } from 'bootstrap';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import { Tooltip, ScrollSpy, Collapse, Modal } from 'bootstrap';
+import Swiper, { Navigation, Pagination, Controller } from 'swiper';
 
 const scrollSpy = new ScrollSpy(document.body, {
     target: '#nav',
 });
 
-const swiper = new Swiper('.swiper-container', {
-    modules: [Navigation, Pagination],
-    spaceBetween: 1,
+const swiperCarousel = new Swiper('.swiper-carousel', {
+    modules: [Navigation, Pagination, Controller],
+    initialslide: 2,
     slidesPerView: 3,
     centeredSlides: true,
-    roundLengths: true,
     loop: true,
-    loopAdditionalSlides: 30,
-    grabCursor: true,
+    loopedSlides: 2,
+    touchRatio: 0.001,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -23,6 +22,42 @@ const swiper = new Swiper('.swiper-container', {
         type: 'bullets',
         clickable: true,
     },
+    keyboard: {
+        enabled: true,
+    },
+});
+
+// in a funciton to hold on initializing until modal show
+function swiperSliderOnce(swiperCarousel) {
+    const swiperSlider = new Swiper('.swiper-slider', {
+        modules: [Navigation, Pagination, Controller],
+        loop: true,
+        initialSlide: swiperCarousel.realIndex,
+        loopedSlides: 2,
+        touchRatio: 0.001,
+        touchReleaseOnEdges: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    swiperSlider.controller.control = swiperCarousel;
+    swiperCarousel.controller.control = swiperSlider;
+    // keeps from initializing multiple times
+    swiperSliderOnce = (_) => {};
+}
+
+const swiperModalel = document.getElementById('swiperModal');
+const swiperModal = new Modal(swiperModalel);
+
+// // initialize modal on every swiper click
+// swiperCarousel.on('click', () => {
+//     swiperModal.toggle();
+// });
+
+// initialize swiper in modal just before modal shown
+swiperModalel.addEventListener('show.bs.modal', function () {
+    swiperSliderOnce(swiperCarousel);
 });
 
 const tooltipTriggerList = [].slice.call(

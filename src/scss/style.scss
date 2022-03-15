@@ -870,6 +870,7 @@ main {
 }
 .swiper-slide.swiper-slide-active {
     .swiper-slide-inner {
+        transition: all 200ms linear 300ms;
         transform: scale(1);
         background: #fc0;
         .content {
