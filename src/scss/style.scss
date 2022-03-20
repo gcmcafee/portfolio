@@ -627,6 +627,12 @@ main {
         }
     }
 }
+.modal.fade .modal-dialog {
+    transform: translate(0, 100px);
+}
+.modal.show .modal-dialog {
+    transform: none;
+}
 .modal {
     .btn-close {
         position: absolute;
@@ -634,15 +640,18 @@ main {
         right: 5px;
     }
 }
+.modal-dialog {
+    overflow: hidden;
+    @media (min-width: 576px) {
+        width: calc(100% - 1.6rem);
+        margin: 0.8rem auto;
+        max-width: 1170px;
+    }
+}
 .modal-body {
     padding: 2rem;
 }
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 900px;
-        width: calc(100% - 1.75rem);
-    }
-}
+
 .hello {
     background-image: url(https://res.cloudinary.com/gcmcafee/image/upload/q_60/v1641259859/portfolio/hero.webp);
     background-position: left top;
@@ -803,6 +812,11 @@ main {
         padding-bottom: 40px;
     }
     .link-overlay-after {
+        &:hover {
+            cursor: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')
+                    16 16,
+                pointer;
+        }
         &:after {
             left: 0;
             top: 1.5rem;
@@ -830,9 +844,9 @@ main {
         &:hover:after {
             opacity: 1;
             // cursor: zoom-in;
-            cursor: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')
-                    16 16,
-                pointer;
+            // cursor: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')
+            //         16 16,
+            //     pointer;
         }
     }
 }
@@ -840,6 +854,9 @@ main {
     .content {
         width: 750px;
     }
+}
+.swiper-slider {
+    overflow: visible;
 }
 .swiper-container {
     position: relative;
@@ -870,7 +887,7 @@ main {
 }
 .swiper-slide.swiper-slide-active {
     .swiper-slide-inner {
-        transition: all 200ms linear 300ms;
+        transition: all 200ms linear 500ms;
         transform: scale(1);
         background: #fc0;
         .content {
@@ -976,24 +993,37 @@ main {
     z-index: 3;
     font-size: 50px;
 }
-
 .swiper-button-prev {
-    left: calc(33% - 25px);
-    @media (min-width: 1200px) {
-        left: calc(33% - 20px);
-    }
+    left: -20px;
     &:before {
         content: '🠐';
     }
 }
 .swiper-button-next {
-    right: calc(33% - 25px);
-    @media (min-width: 1200px) {
-        right: calc(33% - 20px);
-    }
+    right: -20px;
+
     &:before {
         content: '🠒';
     }
+}
+
+.swiper-carousel {
+    .swiper-button-prev {
+        left: calc(33% - 25px);
+        @media (min-width: 1200px) {
+            left: calc(33% - 20px);
+        }
+    }
+    .swiper-button-next {
+        right: calc(33% - 25px);
+        @media (min-width: 1200px) {
+            right: calc(33% - 20px);
+        }
+    }
+}
+
+.at-a-glance {
+    max-width: 350px;
 }
 
 .about {

@@ -36,6 +36,7 @@ function swiperSliderOnce(swiperCarousel) {
         loopedSlides: 2,
         touchRatio: 0.001,
         touchReleaseOnEdges: true,
+        spaceBetween: 50,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
