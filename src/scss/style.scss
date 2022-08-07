@@ -755,12 +755,14 @@ main {
       margin-right: 7px;
       max-height: 32px;
       max-width: 29px;
+      width: 29px;
     }
     @media (min-width: 576px) {
       font-size: 35px;
       li {
         max-height: 35px;
         max-width: 40px;
+        width: 40px;
       }
     }
   }
