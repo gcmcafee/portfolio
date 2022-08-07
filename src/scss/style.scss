@@ -755,7 +755,7 @@ main {
       margin-right: 7px;
       max-height: 32px;
       max-width: 29px;
-      width: 29px;
+      width: 27px;
     }
     @media (min-width: 576px) {
       font-size: 35px;
@@ -991,19 +991,19 @@ main {
   align-items: center;
   justify-content: center;
   z-index: 3;
-  font-size: 50px;
+  font-size: 40px;
 }
 .swiper-button-prev {
   left: -20px;
   &:before {
-    content: '🠐';
+    content: '←';
   }
 }
 .swiper-button-next {
   right: -20px;
 
   &:before {
-    content: '🠒';
+    content: '→';
   }
 }
 
@@ -1021,13 +1021,13 @@ main {
     top: 0;
   }
   .swiper-button-prev {
-    left: calc(33% - 25px);
+    left: calc(33% - 20px);
     @include media-breakpoint-up(xl) {
       left: calc(33% - 20px);
     }
   }
   .swiper-button-next {
-    right: calc(33% - 25px);
+    right: calc(33% - 20px);
     @include media-breakpoint-up(xl) {
       right: calc(33% - 20px);
     }
