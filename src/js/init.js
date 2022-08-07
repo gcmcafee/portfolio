@@ -1,11 +1,12 @@
+import '@styles/style.scss';
 import { Tooltip, ScrollSpy, Collapse, Modal } from 'bootstrap';
-import Swiper, { Navigation, Pagination, Controller } from 'swiper';
+import Swiper, { Autoplay, Navigation, Pagination, Controller } from 'swiper';
 
 const scrollSpy = new ScrollSpy(document.body, {
     target: '#nav',
 });
 
-const swiperCarousel = new Swiper('.swiper-carousel', {
+const swiperCarouselWork = new Swiper('.swiper--carousel--work', {
     modules: [Navigation, Pagination, Controller],
     initialslide: 2,
     slidesPerView: 3,
@@ -28,11 +29,11 @@ const swiperCarousel = new Swiper('.swiper-carousel', {
 });
 
 // in a funciton to hold on initializing until modal show
-function swiperSliderOnce(swiperCarousel) {
+function swiperSliderOnce(swiperCarouselWork) {
     const swiperSlider = new Swiper('.swiper-slider', {
         modules: [Navigation, Pagination, Controller],
         loop: true,
-        initialSlide: swiperCarousel.realIndex,
+        initialSlide: swiperCarouselWork.realIndex,
         loopedSlides: 2,
         touchRatio: 0.001,
         touchReleaseOnEdges: true,
@@ -42,24 +43,34 @@ function swiperSliderOnce(swiperCarousel) {
             prevEl: '.swiper-button-prev',
         },
     });
-    swiperSlider.controller.control = swiperCarousel;
-    swiperCarousel.controller.control = swiperSlider;
+    swiperSlider.controller.control = swiperCarouselWork;
+    swiperCarouselWork.controller.control = swiperSlider;
     // keeps from initializing multiple times
     swiperSliderOnce = (_) => {};
 }
-
+/* To Come
 const swiperModalel = document.getElementById('swiperModal');
 const swiperModal = new Modal(swiperModalel);
 
-// // initialize modal on every swiper click
-// swiperCarousel.on('click', () => {
-//     swiperModal.toggle();
-// });
 
 // initialize swiper in modal just before modal shown
 swiperModalel.addEventListener('show.bs.modal', function () {
-    swiperSliderOnce(swiperCarousel);
+    swiperSliderOnce(swiperCarouselWork);
 });
+*/
+
+const swiperCarouselClients = new Swiper('.swiper--carousel--clients', {
+  modules: [Autoplay],
+  spaceBetween: 100,
+  speed: 7500,
+  autoplay: {
+    delay: 1,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: true,
+});
+  
 
 const tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
