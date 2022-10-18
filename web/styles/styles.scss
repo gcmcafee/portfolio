@@ -1,31 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css');
-@import '/node_modules/bootstrap/scss/bootstrap.scss';
-@import '/node_modules/swiper/swiper.min.css';
+@import '~/node_modules/bootstrap/scss/bootstrap.scss';
+@import '~/node_modules/swiper/swiper.min.css';
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
-
-[style*='--aspect-ratio'] > :first-child {
-  width: 100%;
-}
-[style*='--aspect-ratio'] > img {
-  height: auto;
-}
-@supports (--custom: property) {
-  [style*='--aspect-ratio'] {
-    position: relative;
-  }
-  [style*='--aspect-ratio']::before {
-    content: '';
-    display: block;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }
-  [style*='--aspect-ratio'] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-}
 
 :root {
   --bs-primary: #2acbff;
@@ -676,6 +653,7 @@ main {
   background-image: url(https://res.cloudinary.com/gcmcafee/image/upload/q_60/v1641259859/portfolio/hero.webp);
   background-position: left top;
   background-size: cover;
+  max-height: 1000px;
   h1 {
     max-width: 550px;
   }
@@ -807,6 +785,11 @@ main {
         }
       }
     }
+    &:before {
+      padding-bottom: calc(606 / 1056 * 100%);
+      display: block;
+      content: '';
+    }
   }
   .content.content--flagship {
     .images {
@@ -879,10 +862,9 @@ main {
 .swiper-slider {
   overflow: visible;
 }
-.swiper-wrapper--linear {
+.swiper--linear .swiper-wrapper{
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
-  position: relative;
 }
 // .swiper-container {
 //   position: relative;
@@ -1010,7 +992,7 @@ main {
 .swiper--carousel--work {
   position: relative;
   width: 226vw;
-  margin: 0 -75vw;
+  margin: 0 -75vw !important;
   max-width: 4324px;
   height: var(--slider-height);
   .lead {
@@ -1083,21 +1065,21 @@ main {
 .social {
   font-size: 23px;
 }
-@include media-breakpoint-up(lg) {
-  .min-vh-lg-80 {
-    min-height: 80vh !important;
+@include media-breakpoint-up(md) {
+  .h-md-80 {
+    height: 80vh;
   }
-  .min-vh-lg-100 {
-    min-height: 100vh !important;
+  .h-md-100 {
+    height: 100vh;
   }
 }
-
-@include media-breakpoint-up(md) {
-  .min-vh-md-80 {
-    min-height: 80vh !important;
+  
+@include media-breakpoint-up(lg) {
+  .h-lg-80 {
+    height: 80vh;
   }
-  .min-vh-md-100 {
-    min-height: 100vh !important;
+  .h-lg-100 {
+    height: 100vh;
   }
   .navbar {
     .navbar-nav {
@@ -1117,12 +1099,6 @@ main {
             margin-right: 0;
             margin-left: 0;
           }
-          &:after {
-            display: none;
-          }
-        }
-        &.active:not(.navbar-btn) {
-          &:before,
           &:after {
             display: none;
           }
