@@ -13,6 +13,7 @@
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0",
     "next": "12.2.5",
+    "next-on-netlify": "^3.0.1",
     "next-sanity": "^0.8.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
