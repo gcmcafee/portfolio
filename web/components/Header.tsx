@@ -19,8 +19,12 @@ export default function Header() {
 
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const evalTop = () => {
       setScroll(window.scrollY > 50);
+    };
+    evalTop();
+    window.addEventListener('scroll', () => {
+      evalTop();
     });
   }, []);
 
@@ -111,7 +115,7 @@ export default function Header() {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-54}
+                    offset={-85}
                     duration={500}
                     onClick={() => setExpanded(false)}
                     href="#about"
