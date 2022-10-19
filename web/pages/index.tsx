@@ -107,7 +107,7 @@ export default function Home({ clients }) {
                             Front End Development, UX&nbsp;Development
                           </h3>
                           <ul className="systems list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='drupal'
                                 placement='top'
@@ -124,7 +124,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='bootstrap'
                                 placement='top'
@@ -143,7 +143,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='git'
                                 placement='top'
@@ -160,7 +160,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='photoshop'
                                 placement='top'
@@ -181,7 +181,7 @@ export default function Home({ clients }) {
                             </li>
                           </ul>
                           <ul className="languages-libraries list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='html5'
                                 placement='top'
@@ -198,7 +198,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='css'
                                 placement='top'
@@ -215,7 +215,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='less'
                                 placement='top'
@@ -232,7 +232,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='javascript'
                                 placement='top'
@@ -251,7 +251,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='jquery'
                                 placement='top'
@@ -268,7 +268,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='php'
                                 placement='top'
@@ -322,7 +322,7 @@ export default function Home({ clients }) {
                           </h3>
 
                           <ul className="systems list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='drupal'
                                 placement='top'
@@ -362,7 +362,7 @@ export default function Home({ clients }) {
                                 </span>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='bootstrap'
                                 placement='top'
@@ -381,7 +381,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='git'
                                 placement='top'
@@ -398,7 +398,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='photoshop'
                                 placement='top'
@@ -468,7 +468,7 @@ export default function Home({ clients }) {
                             </li>
                           </ul>
                           <ul className="languages-libraries list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='html5'
                                 placement='top'
@@ -485,7 +485,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='css'
                                 placement='top'
@@ -502,7 +502,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='sass'
                                 placement='top'
@@ -519,7 +519,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='javascript'
                                 placement='top'
@@ -538,7 +538,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='jquery'
                                 placement='top'
@@ -577,7 +577,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='php'
                                 placement='top'
@@ -630,7 +630,7 @@ export default function Home({ clients }) {
                             Front End Development, UX&nbsp;Development
                           </h3>
                           <ul className="systems list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='drupal'
                                 placement='top'
@@ -647,7 +647,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='bootstrap'
                                 placement='top'
@@ -666,7 +666,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='git'
                                 placement='top'
@@ -683,7 +683,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='photoshop'
                                 placement='top'
@@ -704,7 +704,7 @@ export default function Home({ clients }) {
                             </li>
                           </ul>
                           <ul className="languages-libraries list-unstyled d-flex">
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='html5'
                                 placement='top'
@@ -721,7 +721,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='css'
                                 placement='top'
@@ -738,7 +738,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='less'
                                 placement='top'
@@ -755,7 +755,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='javascript'
                                 placement='top'
@@ -774,7 +774,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='jquery'
                                 placement='top'
@@ -791,7 +791,7 @@ export default function Home({ clients }) {
                                 </i>
                               </OverlayTrigger>
                             </li>
-                            <li className="d-flex me-2">
+                            <li className="d-inline-flex justify-content-center me-2">
                               <OverlayTrigger
                                 key='php'
                                 placement='top'
