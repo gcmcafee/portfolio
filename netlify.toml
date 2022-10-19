@@ -1,10 +1,11 @@
 [build]
   base = "/web/"
-  publish = ""
+  publish = ".next"
   command = "pnpm build"
-[[redirects]]  
-  from = "/*"  
-  to = "/index.html"  
-  status = 200
 [[plugins]]  
   package = "@netlify/plugin-nextjs"
+[[redirects]]
+  from = "/_next/static/*"
+  to = "/static/:splat"
+  status = 301
+  force = true
