@@ -1,6 +1,6 @@
 [build]
   base = "/web/"
-  publish = ".next"
+  publish = ""
   command = "pnpm build"
 [[redirects]]  
   from = "/*"  
