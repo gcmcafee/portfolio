@@ -986,7 +986,9 @@ export default function Home({ clients }) {
                 href="https://www.linkedin.com/in/codymcafee"
                 rel="noreferrer"
               >
-                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in">
+                  <span className="visually-hidden">LinkedIn</span>
+                </i>
               </a>
             </div>
           </div>
