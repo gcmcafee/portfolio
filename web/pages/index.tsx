@@ -3,12 +3,13 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Controller, Autoplay } from 'swiper';
+import { Navigation, Pagination, Controller } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import { createClient } from 'next-sanity';
+import clientSanity from '../lib/sanity';
+import Clients from '../components/Clients';
 
 export default function Home({ clients }) {
 
@@ -879,37 +880,7 @@ export default function Home({ clients }) {
           </div>
         </section>
         {clients.length > 0 && (
-          <section
-            id="clients"
-            className="clients bg-white position-relative overflow-hidden py-lg-3"
-          >
-            <div className="title-wrapper">
-              <h2 className="title rotate">Clients</h2>
-            </div>
-            <div className="py-5">
-              <Swiper
-                modules={[Autoplay]}
-                spaceBetween={100}
-                speed={5500}
-                slidesPerView={'auto'}
-                loop
-                className="swiper swiper-container swiper--linear swiper--carousel--clients"
-                allowTouchMove={false}
-                autoplay={{ delay: 0 }}
-              >
-                {clients.map((client) => (
-                  <SwiperSlide className="swiper-slide flex-shrink-1 align-self-center">
-                    <img
-                      key={client?._id}
-                      className={client?.class}
-                      src={client?.url}
-                      alt={client?.alt}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </section>
+          <Clients clients={clients}/>
         )}
         <section
           id="contact"
@@ -995,17 +966,9 @@ export default function Home({ clients }) {
         </section>
       </main>
       <Footer />
-      {/* <script src="./src/js/init.js" type="module"></script> */}
     </>
   );
 }
-
-const clientSanity = createClient({
-  projectId: 'vtohm48w',
-  dataset: 'production',
-  apiVersion: '2022-10-01',
-  useCdn: false,
-});
 
 export async function getStaticProps() {
   const clients = await clientSanity.fetch(`*[_type == "client"]`);
