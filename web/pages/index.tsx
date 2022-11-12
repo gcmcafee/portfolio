@@ -1,7 +1,4 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Controller } from 'swiper';
 import 'swiper/css';
@@ -14,8 +11,6 @@ import Clients from '../components/Clients';
 export default function Home({ clients }) {
 
   return (
-    <>
-      <Header />
       <main id="main" className="main">
         <section
           id="hello"
@@ -896,7 +891,6 @@ export default function Home({ clients }) {
               <br className="d-none d-lg-inline-block" /> Kindly fill out the
               form below and I will get back to you&nbsp;shortly.
             </p>
-            {/* modify this form HTML and place wherever you want your form */}
             <form
               action="https://formspree.io/f/mpzkvljk"
               method="POST"
@@ -965,8 +959,6 @@ export default function Home({ clients }) {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }
 
