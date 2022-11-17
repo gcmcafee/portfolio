@@ -16,6 +16,8 @@
     "next": "12.2.5",
     "next-on-netlify": "^3.0.1",
     "next-sanity": "^0.8.4",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.8.3",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
@@ -26,8 +28,10 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.19.3",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@types/node": "^18.7.23",
     "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.19"
   }
 }
