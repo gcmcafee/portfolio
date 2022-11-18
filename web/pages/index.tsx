@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Controller } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/autoplay';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import clientSanity from '../lib/sanity';
@@ -69,7 +67,6 @@ export default function Home({ clients }) {
                 loopedSlides={2}
                 touchRatio={0.001}
                 className="swiper-container swiper--carousel--work overflow-visible"
-                createElements={true}
                 navigation={{
                   nextEl: '.swiper-button-next',
                   prevEl: '.swiper-button-prev',
