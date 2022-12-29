@@ -13,9 +13,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        clifford: '#da373d',
-      },
       lineHeight: {
         '0': '0',
       },
