@@ -59,7 +59,7 @@ export default function Header() {
           id="navbar"
           className={`${
             scroll ? '' : 'before:opacity-50 before:blur-[10px]'
-          } fixed top-0 left-0 right-0 z-20 before:transition before:duration-500 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[200%] before:-z-index-10 before:-translate-y-1/2 before:translateY-[-50%] before:bg-gray-900/90`}
+          } fixed top-0 left-0 right-0 z-20 before:transition before:duration-500 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[200%] before:-z-index-10 before:-translate-y-1/2 before:translateY-[-50%] before:bg-gray-900/90 before:backdrop-blur-sm before:backdrop-saturate-200`}
         >
           <div className="px-2 sm:px-4 flex w-full relative max-w-[90rem] mx-auto h-14 items-center">
             <div className="flex items-center mr-auto navbar-text ">
@@ -86,7 +86,7 @@ export default function Header() {
               id="navbarTogglee"
             >
               <div
-                className="overlay lg:hidden bg-gray-900/90"
+                className="overlay lg:hidden bg-gray-900/90 backdrop-blur-sm backdrop-saturate-200"
                 onClick={() => setExpanded(false)}
               ></div>
               <ul
