@@ -1,8 +1,8 @@
 export default function Footer() {
   const isDev = process.env.NODE_ENV === 'development';
   return (
-    <footer id="footer" className="text-sm text-center footer">
-      <div className="px-4 py-2 border-t border-gray-300 text-slate-800">
+    <footer id="footer" className="footer text-center text-sm">
+      <div className="border-t border-gray-300 px-4 py-2 text-slate-800">
         <p>
           * Produced while employed with Teneleven Interactive. © 2022 Teneleven
           Interactive. Third party trademarks are registered trademarks of their
@@ -10,11 +10,11 @@ export default function Footer() {
           <span className="whitespace-nowrap">All Rights Reserved.</span>
         </p>
       </div>
-      <div className="px-4 py-4 text-white bg-gray-800">
+      <div className="bg-gray-800 px-4 py-4 text-white">
         <p>© 2022 Cody McAfee. All Rights Reserved.</p>
       </div>
       {isDev && (
-        <div className="fixed z-10 hidden items-center justify-center p-6 text-xs text-white -translate-x-1/2 bg-black rounded-full sm:inline-flex bottom-3 left-1/2 align-center">
+        <div className="align-center fixed bottom-3 left-1/2 z-10 hidden -translate-x-1/2 items-center justify-center rounded-full bg-black p-6 text-xs text-white sm:inline-flex">
           <span className="absolute hidden sm:inline md:hidden">
             sm
             <br />

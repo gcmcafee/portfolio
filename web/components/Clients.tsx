@@ -8,9 +8,9 @@ export default function Clients({ clients }) {
   return (
     <section
       id="clients"
-      className="overflow-hidden bg-white relative clients before:bg-white before:absolute before:top-0 before:left-0 before:h-full before:w-full before:z-[2] before:border-r before:border-r-[#ccc] before:w-[2.5rem]"
+      className="clients relative overflow-hidden bg-white before:absolute before:top-0 before:left-0 before:z-[2] before:h-full before:w-[2.5rem] before:border-r before:border-r-[#ccc] before:bg-white"
     >
-      <h2 className="top-1/2 z-10 absolute uppercase space-x-0 font-medium tracking-[4px] text-xl -rotate-90 origin-center w-0 overflow-visible flex justify-center whitespace-nowrap h-0 ml-1">
+      <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
         Clients
       </h2>
 
@@ -26,7 +26,7 @@ export default function Clients({ clients }) {
           autoplay={{ delay: 0 }}
         >
           {clients.map((client) => (
-            <SwiperSlide className="self-center swiper-slide shrink">
+            <SwiperSlide className="swiper-slide shrink self-center">
               <img
                 key={client?._id}
                 className={client?.class}

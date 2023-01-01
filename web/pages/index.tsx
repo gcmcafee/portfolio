@@ -11,36 +11,38 @@ export default function Home({ clients }) {
   return (
     <main
       id="main"
-      className="main before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-[12.5rem] before:z-[1] before:transition-[all_.5s_ease] before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] "
+      className="main before:absolute before:top-0 before:left-0 before:z-[1] before:h-[12.5rem] before:w-full before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] before:transition-[all_.5s_ease] before:content-[''] "
     >
       <section
         id="hello"
-        className="hello relative flex items-center text-white bg-slate-500 bg-cover md:h-[80vh] md:max-h-[1000px] bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/q_60/v1641259859/portfolio/hero.webp')] before:absolute before:opacity-40 sm:before:opacity-60  lg:before:opacity-60 before:w-full sm:before:w-1/2 before:top-0 before:bottom-0 before:left-0 before:bg-[rgb(20,20,26)] lg:before:w-1/4 after:hidden sm:after:block after:absolute lg:after:w-3/4 after:w-1/2 after:h-full after:top-0 after:left-1/2 lg:after:left-1/4 after:z-[1] after:opacity-40 sm:after:opacity-60 after:bg-[linear-gradient(to_right,rgb(20,20,26)0%,rgba(20,20,26,0.99)9.4%,rgba(20,20,26,0.95)17.6%,rgba(20,20,26,0.9)24.9%,rgba(20,20,26,0.83)31.4%,rgba(20,20,26,0.74)37.3%,rgba(20,20,26,0.65)42.7%,rgba(20,20,26,0.55)47.8%,rgba(20,20,26,0.45)52.9%,rgba(20,20,26,0.35)58%,rgba(20,20,26,0.26)63.4%,rgba(20,20,26,0.18)69.2%,rgba(20,20,26,0.1)75.6%,rgba(20,20,26,0.05)82.7%,rgba(20,20,26,0.01)90.8%,rgba(20,20,26,0)100%)]"
+        className="hello relative flex items-center bg-slate-500 bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/q_60/v1641259859/portfolio/hero.webp')] bg-cover text-white before:absolute before:top-0 before:bottom-0 before:left-0 before:w-full  before:bg-[rgb(20,20,26)] before:opacity-40 after:absolute after:top-0 after:left-1/2 after:z-[1] after:hidden after:h-full after:w-1/2 after:bg-[linear-gradient(to_right,rgb(20,20,26)0%,rgba(20,20,26,0.99)9.4%,rgba(20,20,26,0.95)17.6%,rgba(20,20,26,0.9)24.9%,rgba(20,20,26,0.83)31.4%,rgba(20,20,26,0.74)37.3%,rgba(20,20,26,0.65)42.7%,rgba(20,20,26,0.55)47.8%,rgba(20,20,26,0.45)52.9%,rgba(20,20,26,0.35)58%,rgba(20,20,26,0.26)63.4%,rgba(20,20,26,0.18)69.2%,rgba(20,20,26,0.1)75.6%,rgba(20,20,26,0.05)82.7%,rgba(20,20,26,0.01)90.8%,rgba(20,20,26,0)100%)] after:opacity-40 sm:before:w-1/2 sm:before:opacity-60 sm:after:block sm:after:opacity-60 md:h-[80vh] md:max-h-[1000px] md:min-h-[39.375rem] lg:before:w-1/4 lg:before:opacity-60 lg:after:left-1/4 lg:after:w-3/4"
       >
-        <h2 className="top-1/2 z-10 absolute uppercase space-x-0 font-medium tracking-[4px] text-xl -rotate-90 origin-center w-0 overflow-visible flex justify-center whitespace-nowrap h-0 ml-1">
+        <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
           Hello
         </h2>
 
-        <div className="pt-24 pb-12 md:pt-32 md:pb-24 relative z-[2] mx-auto px-4 w-6xl max-w-[calc(100%-3.25rem)]">
-          <h1 className="max-w-xl mb-4 -ml-2 uppercase font-extralight text-[17.5vw] leading-none sm:text-8xl tracking-wider drop-shadow-md shadow-black font-['Montserrat']">
+        <div className="relative z-[2] mx-auto w-6xl max-w-[calc(100%-3.25rem)] px-4 pt-24 pb-12 md:pt-32 md:pb-24">
+          <h1 className="mb-4 -ml-2 max-w-xl font-['Montserrat'] text-[17.5vw] font-extralight uppercase leading-none tracking-wider shadow-black drop-shadow-md sm:text-8xl">
             <span className="block">
               <span className="ml-2">Cody</span> McAfee
             </span>
           </h1>
-          <p className="max-w-lg mb-8 sm:mb-12 lg:text-2xl text-[1.35rem] font-light leading-9 lg:leading-10">
+          <p className="mb-8 max-w-lg text-[1.35rem] font-light leading-9 sm:mb-12 lg:text-2xl lg:leading-10">
             UX-minded front end development with a focus on fluid, lightweight
             and intuitive web experiences.
           </p>
 
           <a
             href="https://www.linkedin.com/in/codymcafee"
-            className="focus:outline-none inline-flex items-center py-3 mb-2 mr-4 text-center transition duration-300 ease-in-out border rounded-full border-sky-400 bg-sky-400 px-9 text-slate-900 hover:text-white hover:bg-sky-600 hover:border-sky-600 focus:text-white focus:bg-sky-600 focus:border-sky-600"
+            className="group mb-2 mr-4 inline-flex overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
           >
-            View{' '}
-            <i className="text-7xl devicon-linkedin-plain-wordmark leading-0 mx-1 relative  top-[1px]">
-              <span className="sr-only">LinkedIn</span>
-            </i>
-            Profile
+            <span className="inline-flex items-center bg-white bg-opacity-0 py-3 px-9 text-center text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+              View{' '}
+              <i className="devicon-linkedin-plain-wordmark relative top-[1px] mx-1 text-7xl leading-0">
+                <span className="sr-only">LinkedIn</span>
+              </i>
+              Profile
+            </span>
           </a>
           <Link
             to="contact"
@@ -48,7 +50,7 @@ export default function Home({ clients }) {
             offset={-54}
             duration={1000}
             href="#contact"
-            className="focus:outline-none inline-flex items-center py-3 mb-2 text-center transition duration-300 ease-in-out border border-[inherit] rounded-full px-9 hover:bg-white hover:border-white focus:bg-white focus:border-white hover:text-black focus:text-black"
+            className="mb-2 inline-flex items-center rounded-full py-3 px-9 text-center shadow-[inset_0_0_0_2px_white] transition duration-300 ease-in-out hover:bg-white hover:text-slate-800 focus:bg-white focus:text-slate-800 focus:outline-none sm:py-4"
           >
             Let’s Talk
           </Link>
@@ -57,13 +59,13 @@ export default function Home({ clients }) {
 
       <section
         id="work"
-        className="relative flex items-center overflow-hidden text-center work text-slate-800"
+        className="work relative flex items-center overflow-hidden text-center text-slate-800"
       >
-        <h2 className="top-1/2 z-10 absolute uppercase space-x-0 font-medium tracking-[4px] text-xl -rotate-90 origin-center w-0 overflow-visible flex justify-center whitespace-nowrap h-0 ml-1">
+        <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
           Work
         </h2>
-        <div className="lg:py-32 mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-2 py-10">
-          <h3 className="mb-12 text-4xl sm:text-5xl tracking-wide font-extralight">
+        <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-2 py-10 lg:py-32">
+          <h3 className="mb-12 text-4xl font-extralight tracking-wide sm:text-5xl">
             Some Featured&nbsp;Projects
           </h3>
           <div className="flex justify-center pb-10 text-left">
@@ -75,7 +77,7 @@ export default function Home({ clients }) {
               loop
               loopedSlides={2}
               touchRatio={0.001}
-              className="overflow-visible swiper-container swiper--carousel--work relative w-[226vw] max-w-[270.25rem] lg:h-[28.125rem] xl:h-[37.5rem] mx-[-75vw]"
+              className="swiper-container swiper--carousel--work relative mx-[-75vw] w-[226vw] max-w-[270.25rem] overflow-visible lg:h-[28.125rem] xl:h-[37.5rem]"
               navigation={{
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -91,11 +93,11 @@ export default function Home({ clients }) {
             >
               <SwiperSlide
                 key="1"
-                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:ease-linear [&>.swiper-slide-inner]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:delay-500"
+                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200 [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner scale-90 flex bg-white overflow-hidden lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--flagship lg:flex ">
-                    <div className="mt-6 images relative lg:mt-0 flex justify-center items-center flex-fill w-full before:content-[''] before:pb-[calc(606_/_1056_*_100%)]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                  <div className="content content--flagship relative w-full lg:flex ">
+                    <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="
                         image-set
@@ -103,38 +105,38 @@ export default function Home({ clients }) {
                         after:overlay
 
                         before:z-10
-                        after:z-10
+                        before:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-flagship.png')]
 
-                        before:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-flagship.png')] 
-                        after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-flagship.png')]
+                        before:bg-[95%_auto] 
+                        before:bg-center
                         
                         
                         before:bg-no-repeat
+                        after:z-10
+                        
+                        after:hidden
+                        after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-flagship.png')]
+
+                        
+                        after:bg-[95%_auto]
+                        after:bg-center
                         after:bg-no-repeat
                         
-                        before:bg-center
-                        after:bg-center
 
-                        
                         after:opacity-0
-                        after:hidden
                         after:transition-opacity
                         
-
+                        lg:before:bg-[40.625rem_auto]
                         lg:before:bg-left
-                        lg:after:bg-left
-                        
                         lg:before:mix-blend-multiply
-                        lg:before:filter
-                        lg:before:grayscale
                         
+                        lg:before:grayscale
+
+                        lg:before:filter
                         lg:after:block
 
-                        before:bg-[95%_auto]
-                        after:bg-[95%_auto]
-
-                        lg:before:bg-[40.625rem_auto]
                         lg:after:bg-[40.625rem_auto]
+                        lg:after:bg-left
 
                         xl:before:bg-[53.125rem_auto]
                         xl:after:bg-[53.125rem_auto]
@@ -145,7 +147,7 @@ export default function Home({ clients }) {
                       "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">
                         Flagship Cruises & Events
                       </h4>
@@ -154,12 +156,12 @@ export default function Home({ clients }) {
                         Diego’s only locally - and family-owned yacht charter,
                         cruise, and event&nbsp;company.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
-                        <ul className="systems list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="systems mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -170,7 +172,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -183,7 +185,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -194,7 +196,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -208,8 +210,8 @@ export default function Home({ clients }) {
                             </OverlayTrigger>
                           </li>
                         </ul>
-                        <ul className="languages-libraries list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -220,7 +222,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -231,7 +233,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="less"
                               placement="top"
@@ -242,7 +244,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -255,7 +257,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -266,7 +268,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -281,7 +283,7 @@ export default function Home({ clients }) {
                       </div>
                       <div>
                         <a
-                          className="link-overlay-after after:overlay after:z-20 after:left-0 after:top-6 after:bottom-auto after:pb-[calc(606_/_1056_*_100%)] lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:pb-0 lg:after:bottom-0 hover:after:opacity-100 hover:cursor hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] inline-flex items-center py-3 mb-2 text-center transition duration-300 ease-in-out border border-black rounded-full px-9 hover:bg-white hover:border-white focus:bg-white focus:border-white focus:outline-none"
+                          className="link-overlay-after after:overlay hover:cursor mb-2 inline-flex items-center rounded-full py-3  px-9 text-center shadow-[inset_0_0_0_2px_#1e293b] transition duration-300 ease-in-out after:left-0 after:top-6 after:bottom-auto after:z-20 after:pb-[calc(606_/_1056_*_100%)] hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] hover:border-white hover:bg-slate-800 hover:text-white hover:after:opacity-100 focus:bg-slate-800  focus:text-white focus:outline-none lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:bottom-0 lg:after:pb-0"
                           href="https://flagshipsd.com/"
                         >
                           View Website
@@ -293,51 +295,51 @@ export default function Home({ clients }) {
               </SwiperSlide>
               <SwiperSlide
                 key="2"
-                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:ease-linear [&>.swiper-slide-inner]:duration-200  [&.swiper-slide-active>.swiper-slide-inner]:delay-500"
+                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner scale-90 flex bg-white overflow-hidden lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--foresight lg:flex">
-                    <div className="mt-6 images relative lg:mt-0 flex justify-center items-center flex-fill w-full before:content-[''] before:pb-[calc(606_/_1056_*_100%)]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                  <div className="content content--foresight relative w-full lg:flex">
+                    <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="
                           image-set
                           before:overlay
                           after:overlay
 
+                          lg:before:contrast-90
                           before:z-10
-                          after:z-10
 
                           before:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-foresight.png')]
-                          after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-foresight.png')]
+                          before:bg-[95%_auto]
                           
-                          
-                          before:bg-no-repeat
-                          after:bg-no-repeat
                           
                           before:bg-center
-                          after:bg-center
+                          before:bg-no-repeat
+                          
+                          after:z-10
+                          after:hidden
 
                           
-                          after:opacity-0
-                          after:hidden
-                          after:transition-opacity
+                          after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-foresight.png')]
+                          after:bg-[95%_auto]
+                          after:bg-center
                           
                       
+                          after:bg-no-repeat
+                          after:opacity-0
+                          
+                          after:transition-opacity
+                          lg:before:bg-[40.625rem_auto]
                           lg:before:bg-left
-                          lg:after:bg-left
-                          
                           lg:before:mix-blend-multiply
-                          lg:before:filter
-                          lg:before:grayscale
-                          lg:before:contrast-90
                           
+                          lg:before:grayscale
+
+                          lg:before:filter
                           lg:after:block
 
-                          before:bg-[95%_auto]
-                          after:bg-[95%_auto]
-
-                          lg:before:bg-[40.625rem_auto]
                           lg:after:bg-[40.625rem_auto]
+                          lg:after:bg-left
 
                           xl:before:bg-[53.125rem_auto]
                           xl:after:bg-[53.125rem_auto]
@@ -346,20 +348,20 @@ export default function Home({ clients }) {
                        "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 filter lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col filter lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">Foresight Sports</h4>
                       <p className="mb-6 text-xl font-light">
                         Makers of the world’s most advanced and trusted golf
                         launch monitors, simulators, and range solutions –
                         including the award‑winning&nbsp;GCQuad™.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
 
-                        <ul className="systems list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="systems mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -370,7 +372,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="shopify"
                               placement="top"
@@ -378,7 +380,7 @@ export default function Home({ clients }) {
                             >
                               <span className="inline-flex justify-center">
                                 <svg
-                                  className="h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9 fill-current"
+                                  className="h-7 w-7 fill-current text-3xl sm:h-9 sm:w-9 sm:text-4xl"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 448 512"
                                 >
@@ -387,7 +389,7 @@ export default function Home({ clients }) {
                               </span>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -400,7 +402,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -411,7 +413,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -424,7 +426,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="figma"
                               placement="top"
@@ -440,7 +442,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="api"
                               placement="top"
@@ -453,7 +455,7 @@ export default function Home({ clients }) {
                                 title="RESTful APIs"
                               >
                                 <svg
-                                  className="h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9 fill-current"
+                                  className="h-7 w-7 fill-current text-3xl sm:h-9 sm:w-9 sm:text-4xl"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 640 512"
                                 >
@@ -464,8 +466,8 @@ export default function Home({ clients }) {
                             </OverlayTrigger>
                           </li>
                         </ul>
-                        <ul className="languages-libraries list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -476,7 +478,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -487,7 +489,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="sass"
                               placement="top"
@@ -498,7 +500,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -511,7 +513,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -522,7 +524,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="handlebars"
                               placement="top"
@@ -540,7 +542,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -555,7 +557,7 @@ export default function Home({ clients }) {
                       </div>
                       <div>
                         <a
-                          className="link-overlay-after after:overlay after:z-20 after:left-0 after:top-6 after:bottom-auto after:pb-[calc(606_/_1056_*_100%)] lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:pb-0 lg:after:bottom-0 hover:after:opacity-100 hover:cursor hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] inline-flex items-center py-3 mb-2 text-center transition duration-300 ease-in-out border border-black rounded-full px-9 hover:bg-white hover:border-white focus:bg-white focus:border-white focus:outline-none"
+                          className="link-overlay-after after:overlay hover:cursor mb-2 inline-flex items-center rounded-full py-3  px-9 text-center shadow-[inset_0_0_0_2px_#1e293b] transition duration-300 ease-in-out after:left-0 after:top-6 after:bottom-auto after:z-20 after:pb-[calc(606_/_1056_*_100%)] hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] hover:border-white hover:bg-slate-800 hover:text-white hover:after:opacity-100 focus:bg-slate-800  focus:text-white focus:outline-none lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:bottom-0 lg:after:pb-0"
                           href="https://foresightsports.com"
                         >
                           View Website
@@ -568,11 +570,11 @@ export default function Home({ clients }) {
 
               <SwiperSlide
                 key="3"
-                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:ease-linear [&>.swiper-slide-inner]:duration-200  [&.swiper-slide-active>.swiper-slide-inner]:delay-500"
+                className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner scale-90 flex bg-white overflow-hidden lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--georges lg:flex">
-                    <div className="mt-6 images relative lg:mt-0 flex justify-center items-center flex-fill w-full before:content-[''] before:pb-[calc(606_/_1056_*_100%)]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                  <div className="content content--georges relative w-full lg:flex">
+                    <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="                  
                       
@@ -581,41 +583,41 @@ export default function Home({ clients }) {
                       before:overlay
                       after:overlay
 
+                      lg:before:contrast-90
                       before:z-10
-                      after:z-10
 
                       before:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-georges.png')] 
-                      after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-georges.png')]
+                      before:bg-[95%_auto]
                       
-                      
-                      before:bg-no-repeat
-                      after:bg-no-repeat
                       
                       before:bg-center
-                      after:bg-center
+                      before:bg-no-repeat
+                      
+                      after:z-10
+                      after:hidden
 
                       
-                      after:opacity-0
-                      after:hidden
-                      after:transition-opacity
+                      after:bg-[url('https://res.cloudinary.com/gcmcafee/image/upload/f_auto/v1659859248/portfolio/projects/devices-georges.png')]
+                      after:bg-[95%_auto]
+                      after:bg-center
                       
                   
+                      after:bg-no-repeat
+                      after:opacity-0
+                      after:transition-opacity
+                      
+                      lg:before:bg-[40.625rem_auto]
                       lg:before:bg-left
-                      lg:after:bg-left
-                      lg:before:transition-none
-                      
                       lg:before:mix-blend-multiply
-                      lg:before:filter
                       lg:before:grayscale
-                      lg:before:contrast-90
                       
+                      lg:before:filter
+
+                      lg:before:transition-none
                       lg:after:block
 
-                      before:bg-[95%_auto]
-                      after:bg-[95%_auto]
-
-                      lg:before:bg-[40.625rem_auto]
                       lg:after:bg-[40.625rem_auto]
+                      lg:after:bg-left
 
                       xl:before:bg-[53.125rem_auto]
                       xl:after:bg-[53.125rem_auto]
@@ -629,19 +631,19 @@ export default function Home({ clients }) {
                       "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">George’s at the Cove</h4>
                       <p className="mb-6 text-xl font-light">
                         George’s at the Cove is an award-winning three-level
                         dining destination located in the heart of La Jolla
                         overlooking the Pacific&nbsp;Ocean.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
-                        <ul className="systems list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="systems mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -652,7 +654,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -665,7 +667,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -676,7 +678,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -690,8 +692,8 @@ export default function Home({ clients }) {
                             </OverlayTrigger>
                           </li>
                         </ul>
-                        <ul className="languages-libraries list-none flex text-[2.25rem] mb-3">
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                        <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -702,7 +704,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -713,7 +715,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="less"
                               placement="top"
@@ -724,7 +726,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -737,7 +739,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -748,7 +750,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 h-7 w-7 text-3xl sm:text-4xl sm:w-9 sm:h-9">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -763,7 +765,7 @@ export default function Home({ clients }) {
                       </div>
                       <div>
                         <a
-                          className="link-overlay-after after:overlay after:z-20 after:left-0 after:top-6 after:bottom-auto after:pb-[calc(606_/_1056_*_100%)] lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:pb-0 lg:after:bottom-0 hover:after:opacity-100 hover:cursor hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] inline-flex items-center py-3 mb-2 text-center transition duration-300 ease-in-out border border-black rounded-full px-9 hover:bg-white hover:border-white focus:bg-white focus:border-white focus:outline-none"
+                          className="link-overlay-after after:overlay hover:cursor mb-2 inline-flex items-center rounded-full py-3  px-9 text-center shadow-[inset_0_0_0_2px_#1e293b] transition duration-300 ease-in-out after:left-0 after:top-6 after:bottom-auto after:z-20 after:pb-[calc(606_/_1056_*_100%)] hover:cursor-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2048%2048%22%20width%3D%2248px%22%20height%3D%2248px%22%3E%0A%3Cg%20id%3D%22surface18184158%22%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3Argb(100%25%2C100%25%2C100%25)%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%2042%20C%2014.058594%2042%206%2033.941406%206%2024%20C%206%2014.058594%2014.058594%206%2024%206%20C%2033.941406%206%2042%2014.058594%2042%2024%20C%2042%2033.941406%2033.941406%2042%2024%2042%20Z%20M%2024%2042%20%22%2F%3E%0A%3Cpath%20style%3D%22%20stroke%3Anone%3Bfill-rule%3Anonzero%3Bfill%3A%23212529%3Bfill-opacity%3A1%3B%22%20d%3D%22M%2024%204%20C%2012.953125%204%204%2012.953125%204%2024%20C%204%2035.046875%2012.953125%2044%2024%2044%20C%2035.046875%2044%2044%2035.046875%2044%2024%20C%2044%2012.953125%2035.046875%204%2024%204%20Z%20M%2034%2026%20L%2026%2026%20L%2026%2034%20L%2022%2034%20L%2022%2026%20L%2014%2026%20L%2014%2022%20L%2022%2022%20L%2022%2014%20L%2026%2014%20L%2026%2022%20L%2034%2022%20Z%20M%2034%2026%20%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E')_16_16,_pointer] hover:border-white hover:bg-slate-800 hover:text-white hover:after:opacity-100 focus:bg-slate-800  focus:text-white focus:outline-none lg:after:left-[calc(400px_+_6rem)] lg:after:top-0 lg:after:bottom-0 lg:after:pb-0"
                           href="https://georgesatthecove.com/"
                         >
                           View Website
@@ -774,42 +776,42 @@ export default function Home({ clients }) {
                 </div>
               </SwiperSlide>
               <div
-                className="absolute left-0 z-10 w-full text-center transition-opacity duration-300 swiper-pagination mt-4 lg:mt-7 transform-gpu flex items-center justify-center
+                className="swiper-pagination absolute left-0 z-10 mt-4 flex w-full transform-gpu items-center justify-center text-center transition-opacity duration-300 lg:mt-7
                
-                [&>.swiper-pagination-bullet]:w-0
-                [&>.swiper-pagination-bullet]:h-0
                 [&>.swiper-pagination-bullet]:mx-[.6875rem]
-                [&>.swiper-pagination-bullet]:inline-flex   
-                [&>.swiper-pagination-bullet]:justify-center   
-                [&>.swiper-pagination-bullet]:items-center
+                [&>.swiper-pagination-bullet]:inline-flex
+                [&>.swiper-pagination-bullet]:h-0
+                [&>.swiper-pagination-bullet]:w-0   
+                [&>.swiper-pagination-bullet]:items-center   
+                [&>.swiper-pagination-bullet]:justify-center
 
-                [&>.swiper-pagination-bullet:hover]:cursor-pointer
-                [&>.swiper-pagination-bullet:hover]:after:bg-sky-400
-                [&>.swiper-pagination-bullet:focus]:after:bg-sky-400
-                [&>.swiper-pagination-bullet:hover]:after:shadow-none
-                [&>.swiper-pagination-bullet:focus]:after:shadow-none
-             
-                
-                [&>.swiper-pagination-bullet]:after:content-['']
+                [&>.swiper-pagination-bullet]:after:absolute
                 [&>.swiper-pagination-bullet]:after:inline-flex
                 [&>.swiper-pagination-bullet]:after:h-[.625rem]
                 [&>.swiper-pagination-bullet]:after:w-[.625rem]
+                [&>.swiper-pagination-bullet]:after:rounded-full
+             
+                
                 [&>.swiper-pagination-bullet]:after:bg-[rgba(255,255,255,0.4)]
+                [&>.swiper-pagination-bullet]:after:shadow-[0_0_0_.0625rem_rgba(0,0,0,0.2)]
                 [&>.swiper-pagination-bullet]:after:transition-all
                 [&>.swiper-pagination-bullet]:after:duration-300
-                [&>.swiper-pagination-bullet]:after:shadow-[0_0_0_.0625rem_rgba(0,0,0,0.2)]
-                [&>.swiper-pagination-bullet]:after:rounded-full
-                [&>.swiper-pagination-bullet]:after:absolute
+                [&>.swiper-pagination-bullet]:after:content-['']
+                [&>.swiper-pagination-bullet:hover]:cursor-pointer
+                [&>.swiper-pagination-bullet:hover]:after:bg-slate-400
+                [&>.swiper-pagination-bullet:hover]:after:shadow-none
+                [&>.swiper-pagination-bullet:focus]:after:bg-slate-400
+                [&>.swiper-pagination-bullet:focus]:after:shadow-none
 
 
-                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:bg-sky-400
-                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:shadow-none
-                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:w-4
                 [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:h-4
+                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:w-4
+                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:bg-slate-600
+                [&>.swiper-pagination-bullet.swiper-pagination-bullet-active]:after:shadow-none
               "
               ></div>
-              <div className="swiper-button-prev absolute top-1/2 flex items-center justify-center z-10 text-4xl cursor-pointer before:content-['←'] left-[calc(33%_-_20px)]"></div>
-              <div className="swiper-button-next absolute top-1/2 flex items-center justify-center z-10 text-4xl cursor-pointer before:content-['→'] right-[calc(33%_-_20px)]"></div>
+              <div className="swiper-button-prev absolute top-1/2 left-[calc(33%_-_20px)] z-10 flex cursor-pointer items-center justify-center text-4xl before:content-['←']"></div>
+              <div className="swiper-button-next absolute top-1/2 right-[calc(33%_-_20px)] z-10 flex cursor-pointer items-center justify-center text-4xl before:content-['→']"></div>
             </Swiper>
           </div>
         </div>
@@ -817,26 +819,26 @@ export default function Home({ clients }) {
 
       <section
         id="about"
-        className="relative about text-slate-800 bg-slate-900/10"
+        className="about relative bg-slate-900/10 text-slate-800"
       >
-        <h2 className="top-1/2 z-10 absolute uppercase space-x-0 font-medium tracking-[4px] text-xl -rotate-90 origin-center w-0 overflow-visible flex justify-center whitespace-nowrap h-0 ml-1">
+        <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
           About
         </h2>
-        <div className="lg:py-32 mx-auto w-6xl max-w-[calc(100%-3.25rem)] py-10 px-3">
-          <div className="flex flex-col items-center justify-center lg:flex-row item-center gap-x-16">
-            <div className="inline-flex justify-center flex-shrink p-2 mx-auto mb-8 text-center border border-gray-400 rounded-full lg:mb-0">
+        <div className="mx-auto w-6xl max-w-[calc(100%-3.25rem)] py-10 px-3 lg:py-32">
+          <div className="item-center flex flex-col items-center justify-center gap-x-16 lg:flex-row">
+            <div className="mx-auto mb-8 inline-flex flex-shrink justify-center rounded-full border border-gray-400 p-2 text-center lg:mb-0">
               <img
-                className="rounded-full w-80 lg:w-96 h-auto max-w-[64vw]"
+                className="h-auto w-80 max-w-[64vw] rounded-full lg:w-96"
                 src="https://res.cloudinary.com/gcmcafee/image/upload/v1641259859/portfolio/cody-mcafee.webp"
                 alt="Headshot Cody McAfee"
               />
             </div>
-            <div className="flex justify-center flex-grow">
+            <div className="flex flex-grow justify-center">
               <div className="max-w-xl lg:max-w-2xl">
-                <h3 className="mb-5 text-4xl sm:text-5xl tracking-wide font-extralight">
+                <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl">
                   A Bit About Myself
                 </h3>
-                <p className="text-[1.35rem] font-light leading-8 mb-7 ">
+                <p className="mb-7 text-[1.35rem] font-light leading-8 ">
                   I’m a Front End Developer and UX advocate with over 10 years
                   experience in the field. Through freelance and agency work,
                   I’ve had the pleasure of working with a great deal of people
@@ -848,13 +850,15 @@ export default function Home({ clients }) {
                 </p>
                 <a
                   href="https://www.linkedin.com/in/codymcafee"
-                  className="focus:outline-none inline-flex items-center py-3 mb-2 mr-4 text-center transition duration-300 ease-in-out border rounded-full border-sky-400 bg-sky-400 px-9 text-slate-900 hover:text-white hover:bg-sky-600 hover:border-sky-600 focus:text-white focus:bg-sky-600 focus:border-sky-600"
+                  className="group mb-2 mr-4 inline-flex overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
                 >
-                  View{' '}
-                  <i className="text-7xl devicon-linkedin-plain-wordmark leading-0 mx-1 relative  top-[1px]">
-                    <span className="sr-only">LinkedIn</span>
-                  </i>
-                  Profile
+                  <span className="inline-flex items-center bg-white bg-opacity-0 py-3 px-9 text-center text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+                    View{' '}
+                    <i className="devicon-linkedin-plain-wordmark relative top-[1px] mx-1 text-7xl leading-0">
+                      <span className="sr-only">LinkedIn</span>
+                    </i>
+                    Profile
+                  </span>
                 </a>
               </div>
             </div>
@@ -866,16 +870,16 @@ export default function Home({ clients }) {
 
       <section
         id="contact"
-        className="relative flex items-center text-center contact text-slate-800"
+        className="contact relative flex items-center text-center text-slate-800"
       >
-        <h2 className="top-1/2 z-10 absolute uppercase space-x-0 font-medium tracking-[.25rem] text-xl -rotate-90 origin-center w-0 overflow-visible flex justify-center whitespace-nowrap h-0 ml-1">
+        <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[.25rem]">
           Contact
         </h2>
-        <div className="lg:py-32 mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-3 py-10 ">
-          <h3 className="mb-5 text-4xl sm:text-5xl tracking-wide font-extralight">
+        <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-3 py-10 lg:py-32 ">
+          <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl">
             Get In Touch
           </h3>
-          <p className="text-[1.35rem] font-light leading-8 mb-7">
+          <p className="mb-7 text-[1.35rem] font-light leading-8">
             Got a question, proposal or just want to say hello?
             <br className="block" /> Kindly fill out the form below and I will
             get back to you&nbsp;shortly.
@@ -889,17 +893,17 @@ export default function Home({ clients }) {
               <input
                 name="name"
                 type="text"
-                className="w-full px-5 pb-3 border border-slate-300 pt-7 peer focus:pt-7 focus:px-5 focus:pb-3 placeholder:text-transparent placeholder-shown:p-5 focus:ring-sky-400 focus:border-sky-400 focus:outline-none "
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
                 id="full-name"
                 placeholder="Name"
                 required
               />
               <label
-                className="p-5 absolute h-full w-full overflow-hidden whitespace-nowrap pointer-events-none transition-all duration-100 ease-in-out -top-1 left-1.5 opacity-60 scale-75 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:opacity-60 peer-focus:scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:opacity-100 "
+                className="pointer-events-none absolute -top-1 left-1.5 h-full w-full origin-top-left scale-75 overflow-hidden whitespace-nowrap p-5 opacity-60 transition-all duration-100 ease-in-out peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:opacity-100 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:scale-75 peer-focus:opacity-60 "
                 htmlFor="full-name"
               >
                 Name
-                <span className="text-xs text-red-500 relative -top-1 ml-[2px]">
+                <span className="relative -top-1 ml-[2px] text-xs text-red-500">
                   *
                 </span>
               </label>
@@ -908,16 +912,16 @@ export default function Home({ clients }) {
               <input
                 name="_replyto"
                 type="email"
-                className="w-full px-5 pb-3 border border-slate-300 pt-7 peer focus:pt-7 focus:px-5 focus:pb-3 placeholder:text-transparent placeholder-shown:p-5 focus:ring-sky-400 focus:border-sky-400 focus:outline-none "
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
                 id="email-address"
                 placeholder="name@example.com"
               />
               <label
-                className="p-5 absolute h-full w-full overflow-hidden whitespace-nowrap pointer-events-none transition-all duration-100 ease-in-out -top-1 left-1.5 opacity-60 scale-75 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:opacity-60 peer-focus:scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:opacity-100"
+                className="pointer-events-none absolute -top-1 left-1.5 h-full w-full origin-top-left scale-75 overflow-hidden whitespace-nowrap p-5 opacity-60 transition-all duration-100 ease-in-out peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:opacity-100 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:scale-75 peer-focus:opacity-60"
                 htmlFor="email-address"
               >
                 Email
-                <span className="text-xs text-red-500 relative -top-1 ml-[2px]">
+                <span className="relative -top-1 ml-[2px] text-xs text-red-500">
                   *
                 </span>
               </label>
@@ -927,17 +931,17 @@ export default function Home({ clients }) {
                 name="message"
                 // @ts-ignore
                 rows="5"
-                className="w-full px-5 pb-3 border border-slate-300 pt-7 peer focus:pt-7 focus:px-5 focus:pb-3 placeholder:text-transparent placeholder-shown:p-5 focus:ring-sky-400 focus:border-sky-400 focus:outline-none"
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400"
                 placeholder="Leave a comment here"
                 id="message"
                 style={{ height: '200px' }}
               ></textarea>
               <label
-                className="p-5 absolute h-full w-full overflow-hidden whitespace-nowrap pointer-events-none transition-all duration-100 ease-in-out -top-1 left-1.5 opacity-60 scale-75 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:opacity-60 peer-focus:scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:opacity-100"
+                className="pointer-events-none absolute -top-1 left-1.5 h-full w-full origin-top-left scale-75 overflow-hidden whitespace-nowrap p-5 opacity-60 transition-all duration-100 ease-in-out peer-placeholder-shown:top-0 peer-placeholder-shown:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:opacity-100 peer-focus:-top-1 peer-focus:left-1.5 peer-focus:scale-75 peer-focus:opacity-60"
                 htmlFor="message"
               >
                 Message
-                <span className="text-xs text-red-500 relative -top-1 ml-[2px]">
+                <span className="relative -top-1 ml-[2px] text-xs text-red-500">
                   *
                 </span>
               </label>
@@ -945,19 +949,21 @@ export default function Home({ clients }) {
             {/* your other form fields go here */}
             <button
               type="submit"
-              className="flex items-center justify-center w-full py-3 mb-2 mr-4 text-lg text-center transition duration-300 ease-in-out border rounded-full border-sky-400 bg-sky-400 px-9 text-slate-900 hover:text-white hover:bg-sky-600 hover:border-sky-600 font-semibold focus:outline-none focus:text-white focus:bg-sky-600 focus:border-sky-600 "
+              className="group mb-2 mr-4 flex w-full items-center overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
             >
-              Send Message
+              <span className="w-full bg-white bg-opacity-0 py-3 px-9 text-center text-lg font-semibold text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+                Send Message
+              </span>
             </button>
           </form>
-          <div className="mt-6 social">
+          <div className="social mt-6">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/codymcafee"
               rel="noreferrer"
-              className="hover:bg-white focus:bg-white focus:outline-none rounded-full inline-flex justify-center items-center w-0 h-0 p-6"
+              className="inline-flex h-0 w-0 items-center justify-center rounded-full p-6 hover:bg-white focus:bg-white focus:outline-none"
             >
-              <i className="inline-flex justify-center w-0 h-0 text-[1.35rem] fab fa-linkedin-in items-center">
+              <i className="fab fa-linkedin-in inline-flex h-0 w-0 items-center justify-center text-[1.35rem]">
                 <span className="sr-only">LinkedIn</span>
               </i>
             </a>
