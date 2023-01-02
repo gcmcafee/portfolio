@@ -65,7 +65,7 @@ export default function Home({ clients }) {
           Work
         </h2>
         <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-2 py-10 lg:py-32">
-          <h3 className="mb-12 text-4xl font-extralight tracking-wide sm:text-5xl">
+          <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl lg:mb-12">
             Some Featured&nbsp;Projects
           </h3>
           <div className="flex justify-center pb-10 text-left">
@@ -826,7 +826,7 @@ export default function Home({ clients }) {
         </h2>
         <div className="mx-auto w-6xl max-w-[calc(100%-3.25rem)] py-10 px-3 lg:py-32">
           <div className="item-center flex flex-col items-center justify-center gap-x-16 lg:flex-row">
-            <div className="mx-auto mb-8 inline-flex flex-shrink justify-center rounded-full border border-gray-400 p-2 text-center lg:mb-0">
+            <div className="mx-auto mb-5 inline-flex flex-shrink justify-center rounded-full border border-gray-400 p-2 text-center lg:mb-0">
               <img
                 className="h-auto w-80 max-w-[64vw] rounded-full lg:w-96"
                 src="https://res.cloudinary.com/gcmcafee/image/upload/v1641259859/portfolio/cody-mcafee.webp"
@@ -835,7 +835,7 @@ export default function Home({ clients }) {
             </div>
             <div className="flex flex-grow justify-center">
               <div className="max-w-xl lg:max-w-2xl">
-                <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl">
+                <h3 className="mb-2 text-4xl font-extralight tracking-wide sm:mb-5 sm:text-5xl">
                   A Bit About Myself
                 </h3>
                 <p className="mb-7 text-[1.35rem] font-light leading-8 ">
@@ -876,7 +876,7 @@ export default function Home({ clients }) {
           Contact
         </h2>
         <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-3 py-10 lg:py-32 ">
-          <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl">
+          <h3 className="mb-2 text-4xl font-extralight tracking-wide sm:mb-5 sm:text-5xl">
             Get In Touch
           </h3>
           <p className="mb-7 text-[1.35rem] font-light leading-8">
