@@ -77,12 +77,13 @@ export default function Header() {
               </Link>
             </div>
             <Navbar.Toggle
-              className="relative z-10 cursor-pointer border-0 px-3 py-1 text-xl hover:opacity-40 focus:opacity-40 focus:outline-none lg:hidden"
+              className="relative z-10 flex cursor-pointer items-center border-0 px-3 py-1 text-xl hover:opacity-40 focus:opacity-40 focus:outline-none lg:hidden"
               aria-controls="navbarTogglee"
               onClick={() => setExpanded(!expanded)}
             />
             <Navbar.Collapse
-              className="pointer-events-none fixed top-0 bottom-0 left-0 right-0 ml-auto flex h-[auto_!important] items-center text-center opacity-0 lg:pointer-events-auto lg:relative lg:h-auto lg:opacity-100 [&.collapsing]:pointer-events-auto [&.collapsing]:opacity-0 [&.collapsing]:transition-opacity [&.collapsing]:duration-200 [&.show]:pointer-events-auto [&.show]:opacity-100 [&[style*='height']]:opacity-100"
+              className="top- 0 pointer-events-none
+              fixed bottom-0 left-0 right-0 ml-auto flex h-[auto_!important] items-center text-center opacity-0 lg:pointer-events-auto lg:relative lg:h-auto lg:opacity-100 [&.collapsing]:pointer-events-auto [&.collapsing]:opacity-0 [&.collapsing]:transition-opacity [&.collapsing]:duration-200 [&.show]:pointer-events-auto [&.show]:opacity-100 [&[style*='height']]:opacity-100"
               id="navbarTogglee"
             >
               <div
@@ -96,13 +97,13 @@ export default function Header() {
                 <li className="nav-item flex">
                   <Link
                     className="nav-link relative flex h-10 items-center justify-center px-8 font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
-                    activeClass="before:opacity-50 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
+                    activeClass="before:opacity-30 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
                     to="hello"
                     spy={true}
                     smooth={true}
-                    offset={-54}
                     duration={500}
                     onClick={() => setExpanded(false)}
+                    offset={-54}
                     href="#hello"
                   >
                     Hello
@@ -115,9 +116,9 @@ export default function Header() {
                     to="work"
                     spy={true}
                     smooth={true}
-                    offset={-54}
                     duration={500}
                     onClick={() => setExpanded(false)}
+                    offset={-54}
                     href="#work"
                   >
                     Work
@@ -130,9 +131,9 @@ export default function Header() {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-54}
                     duration={500}
                     onClick={() => setExpanded(false)}
+                    offset={-54}
                     href="#about"
                   >
                     About
@@ -145,9 +146,9 @@ export default function Header() {
                     to="clients"
                     spy={true}
                     smooth={true}
-                    offset={-54}
                     duration={500}
                     onClick={() => setExpanded(false)}
+                    offset={-54}
                     href="#clients"
                   >
                     Clients
@@ -160,9 +161,9 @@ export default function Header() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-54}
                     duration={1000}
                     onClick={() => setExpanded(false)}
+                    offset={-54}
                     href="#contact"
                   >
                     Contact
