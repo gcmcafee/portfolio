@@ -82,8 +82,8 @@ export default function Header() {
               onClick={() => setExpanded(!expanded)}
             />
             <Navbar.Collapse
-              className="top- 0 pointer-events-none
-              fixed bottom-0 left-0 right-0 ml-auto flex h-[auto_!important] items-center text-center opacity-0 lg:pointer-events-auto lg:relative lg:h-auto lg:opacity-100 [&.collapsing]:pointer-events-auto [&.collapsing]:opacity-0 [&.collapsing]:transition-opacity [&.collapsing]:duration-200 [&.show]:pointer-events-auto [&.show]:opacity-100 [&[style*='height']]:opacity-100"
+              className="pointer-events-none fixed
+              top-0 bottom-0 left-0 right-0 ml-auto flex h-[auto_!important] items-center text-center opacity-0 lg:pointer-events-auto lg:relative lg:h-auto lg:opacity-100 [&.collapsing]:pointer-events-auto [&.collapsing]:opacity-0 [&.collapsing]:transition-opacity [&.collapsing]:duration-200 [&.show]:pointer-events-auto [&.show]:opacity-100 [&[style*='height']]:opacity-100"
               id="navbarTogglee"
             >
               <div
