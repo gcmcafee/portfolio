@@ -96,7 +96,7 @@ export default function Header() {
               >
                 <li className="nav-item flex">
                   <Link
-                    className="nav-link relative flex h-10 items-center justify-center px-8 font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
+                    className="nav-link relative flex h-10 items-center justify-center px-8 text-lg font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:text-base lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
                     activeClass="before:opacity-30 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
                     to="hello"
                     spy={true}
@@ -111,7 +111,7 @@ export default function Header() {
                 </li>
                 <li className="nav-item flex">
                   <Link
-                    className="nav-link relative flex h-10 items-center justify-center px-8 font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
+                    className="nav-link relative flex h-10 items-center justify-center px-8 text-lg font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:text-base lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
                     activeClass="before:opacity-30 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
                     to="work"
                     spy={true}
@@ -126,7 +126,7 @@ export default function Header() {
                 </li>
                 <li className="nav-item flex">
                   <Link
-                    className="nav-link relative flex h-10 items-center justify-center px-8 font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
+                    className="nav-link relative flex h-10 items-center justify-center px-8 text-lg font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:text-base lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
                     activeClass="before:opacity-30 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
                     to="about"
                     spy={true}
@@ -141,7 +141,7 @@ export default function Header() {
                 </li>
                 <li className="nav-item flex">
                   <Link
-                    className="nav-link relative flex h-10 items-center justify-center px-8 font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
+                    className="nav-link relative flex h-10 items-center justify-center px-8 text-lg font-semibold tracking-wider text-white before:absolute before:left-0 before:right-0 before:bottom-auto before:-z-10 before:mr-0 before:ml-0 before:h-[26px] before:w-auto before:-skew-x-3 before:-skew-y-3 before:bg-violet-400 before:opacity-0 before:transition-opacity before:duration-300 before:content-[''] hover:before:opacity-50 focus:outline-none focus:before:opacity-50 lg:h-14 lg:text-base lg:before:top-0 lg:before:h-[4px] before:lg:skew-x-0 before:lg:skew-y-0 lg:before:bg-white "
                     activeClass="before:opacity-30 lg:before:opacity-100 lg:hover:before:opacity-100 lg:focus:before:opacity-100"
                     to="clients"
                     spy={true}
@@ -156,7 +156,7 @@ export default function Header() {
                 </li>
                 <li className="nav-item mt-3 lg:mt-0 lg:ml-4">
                   <Link
-                    className="inline-flex h-11 items-center rounded-full px-8 text-center font-semibold tracking-wider text-white shadow-[inset_0_0_0_2px_white] transition duration-300 ease-in-out hover:bg-white hover:text-slate-800  focus:bg-white focus:text-slate-800 focus:outline-none lg:mr-4 [&.active]:bg-white [&.active]:text-slate-800"
+                    className="inline-flex h-11 items-center rounded-full px-8 text-center text-lg font-semibold tracking-wider text-white shadow-[inset_0_0_0_2px_white] transition duration-300 ease-in-out hover:bg-white  hover:text-slate-800 focus:bg-white focus:text-slate-800 focus:outline-none lg:mr-4 lg:text-base [&.active]:bg-white [&.active]:text-slate-800"
                     activeClass="active"
                     to="contact"
                     spy={true}
