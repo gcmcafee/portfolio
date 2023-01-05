@@ -95,7 +95,7 @@ export default function Home({ clients }) {
                 key="1"
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200 [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
                   <div className="content content--flagship relative w-full lg:flex ">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
@@ -297,7 +297,7 @@ export default function Home({ clients }) {
                 key="2"
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
                   <div className="content content--foresight relative w-full lg:flex">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
@@ -572,7 +572,7 @@ export default function Home({ clients }) {
                 key="3"
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
-                <div className="swiper-slide-inner flex scale-90 overflow-hidden bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
+                <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
                   <div className="content content--georges relative w-full lg:flex">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
