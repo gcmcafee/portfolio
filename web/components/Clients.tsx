@@ -26,9 +26,11 @@ export default function Clients({ clients }) {
           autoplay={{ delay: 0 }}
         >
           {clients.map((client) => (
-            <SwiperSlide className="swiper-slide shrink self-center">
+            <SwiperSlide
+              className="swiper-slide shrink self-center"
+              key={client._id}
+            >
               <img
-                key={client?._id}
                 className={client?.class}
                 src={client?.url}
                 alt={client?.alt}
