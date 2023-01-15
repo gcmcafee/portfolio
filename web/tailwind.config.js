@@ -29,6 +29,15 @@ module.exports = {
         '6xl': '72rem', // 1152px
         '7xl': '80rem', // 1280px
       },
+      keyframes: {
+        spin: {
+          'from': { transform: 'rotate(360deg)' },
+          'to': { transform: 'rotate(0deg)' }
+        },
+      },
+      animation: {
+        'spin': 'spin 16s linear infinite'
+      }
     },
   },
   plugins: [],
