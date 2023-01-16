@@ -5,6 +5,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import clientSanity from '../lib/sanity';
 import Clients from '../components/Clients';
+import Logos from '../components/Logos';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function Home({ clients }) {
@@ -54,6 +55,7 @@ export default function Home({ clients }) {
           >
             Let’s Talk
           </Link>
+          <Logos />
         </div>
       </section>
 
