@@ -8,6 +8,7 @@ const GoogleAnalytics = () => {
   const router = useRouter();
   // 👇 send page views when users gets to the landing page
   useEffect(() => {
+    console.log('TRACKING_ID is: ' + TRACKING_ID);
     if (!TRACKING_ID || router.isPreview) return;
     gtag('config', TRACKING_ID, {
       send_page_view: false, //manually send page views to have full control
