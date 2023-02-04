@@ -6,6 +6,7 @@ specifiers:
   '@fullhuman/postcss-purgecss': ^5.0.0
   '@netlify/plugin-nextjs': ^4.27.1
   '@popperjs/core': ^2.11.5
+  '@types/gtag.js': ^0.0.12
   '@types/node': ^18.7.23
   autoprefixer: ^10.4.13
   bootstrap: ^5.2.0
@@ -33,6 +34,7 @@ dependencies:
   '@babel/core': 7.19.3
   '@netlify/plugin-nextjs': 4.27.1
   '@popperjs/core': 2.11.6
+  '@types/gtag.js': 0.0.12
   bootstrap: 5.2.0_@popperjs+core@2.11.6
   next: 12.2.5_l6eq7bwnlgdua4xrfjeqefi3jm
   next-on-netlify: 3.0.1
@@ -2380,6 +2382,10 @@ packages:
     resolution: {integrity: sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==}
     dependencies:
       tslib: 2.4.0
+    dev: false
+
+  /@types/gtag.js/0.0.12:
+    resolution: {integrity: sha512-YQV9bUsemkzG81Ea295/nF/5GijnD2Af7QhEofh7xu+kvCN6RdodgNwwGWXB5GMI3NoyvQo0odNctoH/qLMIpg==}
     dev: false
 
   /@types/json5/0.0.29:
