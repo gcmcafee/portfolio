@@ -12,7 +12,7 @@ export default function Home({ clients }) {
   return (
     <main
       id="main"
-      className="main main-1 before:absolute before:top-0 before:left-0 before:z-[1] before:h-[12.5rem] before:w-full before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] before:transition-[all_.5s_ease] before:content-[''] "
+      className="main before:absolute before:top-0 before:left-0 before:z-[1] before:h-[12.5rem] before:w-full before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] before:transition-[all_.5s_ease] before:content-[''] "
     >
       <section
         id="hello"
