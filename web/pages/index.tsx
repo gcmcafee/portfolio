@@ -12,7 +12,7 @@ export default function Home({ clients }) {
   return (
     <main
       id="main"
-      className="main before:absolute before:top-0 before:left-0 before:z-[1] before:h-[12.5rem] before:w-full before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] before:transition-[all_.5s_ease] before:content-[''] "
+      className="main main-1 before:absolute before:top-0 before:left-0 before:z-[1] before:h-[12.5rem] before:w-full before:bg-gradient-to-b before:from-[rgba(20,20,26,.8)] before:to-[rgba(20,20,26,0)] before:transition-[all_.5s_ease] before:content-[''] "
     >
       <section
         id="hello"
@@ -35,9 +35,9 @@ export default function Home({ clients }) {
 
           <a
             href="https://www.linkedin.com/in/codymcafee"
-            className="inline-flex mb-2 mr-4 overflow-hidden rounded-full group bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
+            className="group mb-2 mr-4 inline-flex overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
           >
-            <span className="inline-flex items-center py-3 text-center text-white transition duration-300 bg-white bg-opacity-0 px-9 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+            <span className="inline-flex items-center bg-white bg-opacity-0 py-3 px-9 text-center text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
               View{' '}
               <i className="devicon-linkedin-plain-wordmark relative top-[1px] mx-1 text-7xl leading-0">
                 <span className="sr-only">LinkedIn</span>
@@ -61,13 +61,13 @@ export default function Home({ clients }) {
 
       <section
         id="work"
-        className="relative flex items-center overflow-hidden text-center work text-slate-800"
+        className="work relative flex items-center overflow-hidden text-center text-slate-800"
       >
         <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
           Work
         </h2>
         <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-2 py-10 lg:py-32">
-          <h3 className="mb-5 text-4xl tracking-wide font-extralight sm:text-5xl lg:mb-12">
+          <h3 className="mb-5 text-4xl font-extralight tracking-wide sm:text-5xl lg:mb-12">
             Some Featured&nbsp;Projects
           </h3>
           <div className="flex justify-center pb-10 text-left">
@@ -98,7 +98,7 @@ export default function Home({ clients }) {
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200 [&>.swiper-slide-inner]:ease-linear"
               >
                 <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--flagship lg:flex ">
+                  <div className="content content--flagship relative w-full lg:flex ">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="
@@ -149,7 +149,7 @@ export default function Home({ clients }) {
                       "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">
                         Flagship Cruises & Events
                       </h4>
@@ -158,12 +158,12 @@ export default function Home({ clients }) {
                         Diego’s only locally - and family-owned yacht charter,
                         cruise, and event&nbsp;company.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
                         <ul className="systems mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -174,7 +174,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -187,7 +187,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -198,7 +198,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -213,7 +213,7 @@ export default function Home({ clients }) {
                           </li>
                         </ul>
                         <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -224,7 +224,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -235,7 +235,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="less"
                               placement="top"
@@ -246,7 +246,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -259,7 +259,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -270,7 +270,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -300,7 +300,7 @@ export default function Home({ clients }) {
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
                 <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--foresight lg:flex">
+                  <div className="content content--foresight relative w-full lg:flex">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="
@@ -350,20 +350,20 @@ export default function Home({ clients }) {
                        "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 filter lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col filter lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">Foresight Sports</h4>
                       <p className="mb-6 text-xl font-light">
                         Makers of the world’s most advanced and trusted golf
                         launch monitors, simulators, and range solutions –
                         including the award‑winning&nbsp;GCQuad™.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
 
                         <ul className="systems mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -374,7 +374,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="shopify"
                               placement="top"
@@ -382,7 +382,7 @@ export default function Home({ clients }) {
                             >
                               <span className="inline-flex justify-center">
                                 <svg
-                                  className="text-3xl fill-current h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl"
+                                  className="h-7 w-7 fill-current text-3xl sm:h-9 sm:w-9 sm:text-4xl"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 448 512"
                                 >
@@ -391,7 +391,7 @@ export default function Home({ clients }) {
                               </span>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -404,7 +404,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -415,7 +415,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -428,7 +428,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="figma"
                               placement="top"
@@ -444,7 +444,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="api"
                               placement="top"
@@ -457,7 +457,7 @@ export default function Home({ clients }) {
                                 title="RESTful APIs"
                               >
                                 <svg
-                                  className="text-3xl fill-current h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl"
+                                  className="h-7 w-7 fill-current text-3xl sm:h-9 sm:w-9 sm:text-4xl"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 640 512"
                                 >
@@ -469,7 +469,7 @@ export default function Home({ clients }) {
                           </li>
                         </ul>
                         <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -480,7 +480,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -491,7 +491,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="sass"
                               placement="top"
@@ -502,7 +502,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -515,7 +515,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -526,7 +526,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="handlebars"
                               placement="top"
@@ -544,7 +544,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -575,7 +575,7 @@ export default function Home({ clients }) {
                 className="[&>.swiper-slide-inner>.content]:opacity-30 [&>.swiper-slide-inner>.content]:transition-opacity  [&>.swiper-slide-inner>.content]:duration-200 [&.swiper-slide-active>.swiper-slide-inner]:scale-100 [&.swiper-slide-active>.swiper-slide-inner]:bg-[#fc0] [&.swiper-slide-active>.swiper-slide-inner]:delay-500 [&.swiper-slide-active>.swiper-slide-inner>.content]:opacity-100 [&.swiper-slide-active:hover_.image-set:after]:opacity-100 [&>.swiper-slide-inner]:transition-all [&>.swiper-slide-inner]:duration-200  [&>.swiper-slide-inner]:ease-linear"
               >
                 <div className="swiper-slide-inner flex scale-90 overflow-hidden rounded-3xl bg-white lg:h-[28.125rem] xl:h-[37.5rem]">
-                  <div className="relative w-full content content--georges lg:flex">
+                  <div className="content content--georges relative w-full lg:flex">
                     <div className="images flex-fill relative mt-6 flex w-full items-center justify-center before:pb-[calc(606_/_1056_*_100%)] before:content-[''] lg:mt-0">
                       <div
                         className="                  
@@ -633,19 +633,19 @@ export default function Home({ clients }) {
                       "
                       ></div>
                     </div>
-                    <div className="flex flex-col order-first max-w-sm m-4 lg:mt-6 xl:m-12">
+                    <div className="order-first m-4 flex max-w-sm flex-col lg:mt-6 xl:m-12">
                       <h4 className="mb-2 text-3xl">George’s at the Cove</h4>
                       <p className="mb-6 text-xl font-light">
                         George’s at the Cove is an award-winning three-level
                         dining destination located in the heart of La Jolla
                         overlooking the Pacific&nbsp;Ocean.
                       </p>
-                      <div className="mt-auto mb-4 tech">
-                        <h5 className="mb-4 text-xl h5">
+                      <div className="tech mt-auto mb-4">
+                        <h5 className="h5 mb-4 text-xl">
                           Front End Development, UX&nbsp;Development
                         </h5>
                         <ul className="systems mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="drupal"
                               placement="top"
@@ -656,7 +656,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="bootstrap"
                               placement="top"
@@ -669,7 +669,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="git"
                               placement="top"
@@ -680,7 +680,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="photoshop"
                               placement="top"
@@ -695,7 +695,7 @@ export default function Home({ clients }) {
                           </li>
                         </ul>
                         <ul className="languages-libraries mb-3 flex list-none text-[2.25rem]">
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="html5"
                               placement="top"
@@ -706,7 +706,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="css"
                               placement="top"
@@ -717,7 +717,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="less"
                               placement="top"
@@ -728,7 +728,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="javascript"
                               placement="top"
@@ -741,7 +741,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="jquery"
                               placement="top"
@@ -752,7 +752,7 @@ export default function Home({ clients }) {
                               </i>
                             </OverlayTrigger>
                           </li>
-                          <li className="inline-flex justify-center mr-2 text-3xl h-7 w-7 sm:h-9 sm:w-9 sm:text-4xl">
+                          <li className="mr-2 inline-flex h-7 w-7 justify-center text-3xl sm:h-9 sm:w-9 sm:text-4xl">
                             <OverlayTrigger
                               key="php"
                               placement="top"
@@ -821,23 +821,23 @@ export default function Home({ clients }) {
 
       <section
         id="about"
-        className="relative about bg-slate-900/10 text-slate-800"
+        className="about relative bg-slate-900/10 text-slate-800"
       >
         <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[4px]">
           About
         </h2>
         <div className="mx-auto w-6xl max-w-[calc(100%-3.25rem)] py-10 px-3 lg:py-32">
-          <div className="flex flex-col items-center justify-center item-center gap-x-16 lg:flex-row">
-            <div className="inline-flex justify-center flex-shrink p-2 mx-auto mb-5 text-center border border-gray-400 rounded-full lg:mb-0">
+          <div className="item-center flex flex-col items-center justify-center gap-x-16 lg:flex-row">
+            <div className="mx-auto mb-5 inline-flex flex-shrink justify-center rounded-full border border-gray-400 p-2 text-center lg:mb-0">
               <img
                 className="h-auto w-80 max-w-[64vw] rounded-full mix-blend-multiply brightness-125 lg:w-96"
                 src="https://res.cloudinary.com/gcmcafee/image/upload/v1641259859/portfolio/cody-mcafee.webp"
                 alt="Headshot Cody McAfee"
               />
             </div>
-            <div className="flex justify-center flex-grow">
+            <div className="flex flex-grow justify-center">
               <div className="max-w-xl lg:max-w-2xl">
-                <h3 className="mb-2 text-4xl tracking-wide font-extralight sm:mb-5 sm:text-5xl">
+                <h3 className="mb-2 text-4xl font-extralight tracking-wide sm:mb-5 sm:text-5xl">
                   A Bit About Myself
                 </h3>
                 <p className="mb-7 text-[1.35rem] font-light leading-8 ">
@@ -852,9 +852,9 @@ export default function Home({ clients }) {
                 </p>
                 <a
                   href="https://www.linkedin.com/in/codymcafee"
-                  className="inline-flex mb-2 mr-4 overflow-hidden rounded-full group bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
+                  className="group mb-2 mr-4 inline-flex overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
                 >
-                  <span className="inline-flex items-center py-3 text-center text-white transition duration-300 bg-white bg-opacity-0 px-9 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+                  <span className="inline-flex items-center bg-white bg-opacity-0 py-3 px-9 text-center text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
                     View{' '}
                     <i className="devicon-linkedin-plain-wordmark relative top-[1px] mx-1 text-7xl leading-0">
                       <span className="sr-only">LinkedIn</span>
@@ -872,13 +872,13 @@ export default function Home({ clients }) {
 
       <section
         id="contact"
-        className="relative flex items-center text-center contact text-slate-800"
+        className="contact relative flex items-center text-center text-slate-800"
       >
         <h2 className="absolute top-1/2 z-10 ml-1 flex h-0 w-0 origin-center -rotate-90 justify-center space-x-0 overflow-visible whitespace-nowrap text-xl font-medium uppercase tracking-[.25rem]">
           Contact
         </h2>
         <div className="mx-auto w-3xl max-w-[calc(100%-3.25rem)] px-3 py-10 lg:py-32 ">
-          <h3 className="mb-2 text-4xl tracking-wide font-extralight sm:mb-5 sm:text-5xl">
+          <h3 className="mb-2 text-4xl font-extralight tracking-wide sm:mb-5 sm:text-5xl">
             Get In Touch
           </h3>
           <p className="mb-7 text-[1.35rem] font-light leading-8">
@@ -895,7 +895,7 @@ export default function Home({ clients }) {
               <input
                 name="name"
                 type="text"
-                className="w-full px-5 pb-3 border peer border-slate-300 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
                 id="full-name"
                 placeholder="Name"
                 required
@@ -914,7 +914,7 @@ export default function Home({ clients }) {
               <input
                 name="_replyto"
                 type="email"
-                className="w-full px-5 pb-3 border peer border-slate-300 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400 "
                 id="email-address"
                 placeholder="name@example.com"
               />
@@ -933,7 +933,7 @@ export default function Home({ clients }) {
                 name="message"
                 // @ts-ignore
                 rows="5"
-                className="w-full px-5 pb-3 border peer border-slate-300 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400"
+                className="peer w-full border border-slate-300 px-5 pb-3 pt-7 placeholder:text-transparent placeholder-shown:p-5 focus:border-sky-400 focus:px-5 focus:pt-7 focus:pb-3 focus:outline-none focus:ring-sky-400"
                 placeholder="Leave a comment here"
                 id="message"
                 style={{ height: '200px' }}
@@ -951,19 +951,19 @@ export default function Home({ clients }) {
             {/* your other form fields go here */}
             <button
               type="submit"
-              className="flex items-center w-full mb-2 mr-4 overflow-hidden rounded-full group bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
+              className="group mb-2 mr-4 flex w-full items-center overflow-hidden rounded-full bg-gradient-to-br from-purple-600 to-blue-500 focus:outline-none"
             >
-              <span className="w-full py-3 text-lg font-semibold text-center text-white transition duration-300 bg-white bg-opacity-0 px-9 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
+              <span className="w-full bg-white bg-opacity-0 py-3 px-9 text-center text-lg font-semibold text-white transition duration-300 group-hover:bg-opacity-100 group-hover:text-slate-800 group-focus:border-white group-focus:bg-white group-focus:bg-opacity-100 group-focus:text-slate-800 sm:py-4">
                 Send Message
               </span>
             </button>
           </form>
-          <div className="mt-6 social">
+          <div className="social mt-6">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/codymcafee"
               rel="noreferrer"
-              className="inline-flex items-center justify-center w-0 h-0 p-6 rounded-full hover:bg-white focus:bg-white focus:outline-none"
+              className="inline-flex h-0 w-0 items-center justify-center rounded-full p-6 hover:bg-white focus:bg-white focus:outline-none"
             >
               <i className="fab fa-linkedin-in inline-flex h-0 w-0 items-center justify-center text-[1.35rem]">
                 <span className="sr-only">LinkedIn</span>
